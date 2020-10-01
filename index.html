@@ -23,6 +23,25 @@
         #tushar {
             transition: all ease 0.3s;
         }
+        @media only screen and (max-width: 576px) {
+            .carousel-item{
+                height: 400px;
+            }
+            .mobile{
+                display: block;
+            }
+            .laptop{
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 571px) {
+            .mobile{
+                display: none;
+            }
+            .laptop{
+                display: block;
+            }
+        }
     </style>
 </head>
 
@@ -153,7 +172,8 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://source.unsplash.com/1600x500/?iphone" class="d-block w-100" alt="...">
+                <img class="mobile" src="https://source.unsplash.com/600x400/?iphone" class="d-block w-100 h-100" alt="...">
+                <img class="laptop" src="https://source.unsplash.com/1600x500/?iphone" class="d-block w-100 h-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Welcome to iCoder</h2>
                     <p>Learn CPP and Development</p>
@@ -163,7 +183,8 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://source.unsplash.com/1600x500/?python,coding" class="d-block w-100" alt="...">
+                <img class="mobile" src="https://source.unsplash.com/600x400/?python,coding" class="d-block w-100 h-100" alt="...">
+                <img class="laptop" src="https://source.unsplash.com/1600x500/?python,coding" class="d-block w-100 h-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Technology Blogs</h2>
                     <p>Keep ourself up to date with latest Technologies</p>
@@ -173,7 +194,9 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://source.unsplash.com/1600x500/?programming,android" class="d-block w-100" alt="...">
+                <img class="mobile" src="https://source.unsplash.com/600x400/?programming,android" class="d-block w-100 h-100" alt="...">
+                <img class="laptop" src="https://source.unsplash.com/1600x500/?programming,android" class="d-block w-100 h-100" alt="..."><img class="mobile" src="https://source.unsplash.com/600x400/?programming,android" class="d-block w-100 h-100" alt="...">
+                <img class="laptop" src="https://source.unsplash.com/1600x500/?programming,android" class="d-block w-100 h-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Award Winning Blogs</h2>
                     <p>Trending Technologies</p>
